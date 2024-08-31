@@ -1,0 +1,9 @@
+@import "../forms-lists.css";
+
+.list-table th:nth-child(1) {
+    width: 80px;
+}
+
+.show {
+    width: 100px;
+}

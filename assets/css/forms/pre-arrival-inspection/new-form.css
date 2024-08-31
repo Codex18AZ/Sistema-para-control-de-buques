@@ -1,0 +1,59 @@
+@import "../../forms.css";
+
+.form-table tr td:nth-child(2) {
+    text-align: justify;
+    padding: 7px;
+}
+
+.date {
+    width: 155px;
+}
+
+.conf {
+    min-width: 40px;
+}
+
+select {
+    width: 150px;
+}
+
+input[type=date] {
+    width: 146px;
+}
+
+.information input[type=text] {
+    width: 116px;
+    height: 16px;
+    padding: 2px;
+}
+
+textarea {
+    width: 156px;
+    padding: 2px;
+}
+
+@media screen and (max-width: 424px) {
+    .options input[type=button] {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .options input[type=button]:nth-child(1) {
+        width: 150px;
+    }
+
+    .options input[type=button]:nth-child(2) {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 643px) {
+    .details {
+        width: 603px;
+    }
+
+    .detail:nth-child(even) {
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,54 @@
+@import "../finished-forms.css";
+
+/* Tablas del formulario actual */
+.pdf-table-two {
+    margin-bottom: 15px;
+}
+
+.pdf-signatures {
+    margin-bottom: 30px;
+}
+
+.pdf-signatures td {
+    width: 50%;
+    text-align: center;
+}
+
+/* Estilos y medidas de las tablas */
+.pdf-table-one tr:not(:nth-child(1)) td:nth-child(1),
+.pdf-table-one tr:not(:nth-child(1)) td:nth-child(2),
+.pdf-table-one tr:not(:nth-child(1)) td:nth-child(3) {
+    text-align: center;
+}
+
+.pdf-details td:nth-child(1),
+.pdf-table-one td:nth-child(1) {
+    width: 17.5%;
+}
+
+.pdf-table-one td:nth-child(2),
+.pdf-table-one td:nth-child(3) {
+    width: 12.5%;
+}
+
+.pdf-table-two td:nth-child(2),
+.pdf-table-two td:nth-child(3),
+.pdf-table-two td:nth-child(4),
+.pdf-table-two td:nth-child(5),
+.pdf-table-two td:nth-child(6) {
+    width: 12.5%;
+    max-width: 20%;
+    text-align: center;
+}
+
+/* Espacio temporal para las firmas */
+.pdf-signatures,
+.pdf-signatures tr,
+.pdf-signatures td {
+    border-color: transparent;
+}
+
+.pdf-signatures td {
+    height: 170px;
+    vertical-align: bottom;
+}

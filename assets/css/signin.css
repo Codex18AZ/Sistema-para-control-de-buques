@@ -1,0 +1,47 @@
+@import "general.css";
+
+.login {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.login form {
+    width: 275px;
+}
+
+.field,
+.buttons {
+    width: 100%;
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.buttons input,
+.buttons a {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.buttons input {
+    cursor: pointer;
+}

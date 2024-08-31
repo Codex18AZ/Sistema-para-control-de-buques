@@ -1,0 +1,142 @@
+@import "../../forms.css";
+
+.details p {
+    width: 100%;
+}
+
+.table-container:first-of-type {
+    margin-bottom: 30px;
+}
+
+.detail label {
+    width: 105px;
+    margin-right: 5px;
+}
+
+.laycan {
+    width: 179px;
+}
+
+.laycan input:nth-child(1) {
+    margin-bottom: 7px;
+}
+
+.draft {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ship-info input {
+    width: 100px;
+}
+
+/* Agregado de eventos no visibles al principio */
+.plus-icon {
+    height: 35px;
+    filter: invert(52%) sepia(11%) saturate(2132%) hue-rotate(121deg) brightness(94%) contrast(91%);
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+details {
+    max-width: 190px;
+    padding: 5px;
+    text-align: left;
+}
+
+details>summary {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+details>summary::marker,
+details>summary::webkit-details-marker {
+    display: none;
+}
+
+/* Campos de texto */
+#events td:nth-child(4) input[type=text],
+.observations input {
+    width: calc(100% - 4px);
+}
+
+/* Firmas de los representantes */
+.signatures {
+    column-gap: 50px;
+}
+
+.sign-data {
+    flex-direction: column;
+}
+
+.sign-text {
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 374px) {
+    .draft {
+        width: 154px;
+    }
+
+    .detail input[type=number] {
+        width: 70px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .draft {
+        width: 179px;
+    }
+
+    .detail input[type=number] {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .options input[type=button] {
+        width: 215px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+
+    .options input[type=button]:nth-child(1),
+    .options input[type=button]:nth-child(2) {
+        width: 150px;
+    }
+
+    #guardar-boton {
+        width: 215px;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    .sign-data {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 643px) {
+    .details {
+        width: 289px;
+        height: 220px;
+        flex-direction: column;
+    }
+
+    .detail:nth-child(5),
+    .detail:nth-child(6) {
+        margin-right: 0;
+    }
+}
+
+.mostrarOpcion5 {
+    display: none;
+}
+
+#ocultarFila5 {
+    display: none;
+}

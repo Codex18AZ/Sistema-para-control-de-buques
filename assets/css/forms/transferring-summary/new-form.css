@@ -1,0 +1,94 @@
+@import "../../forms.css";
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.form-table {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    width: 140px;
+}
+
+.scaled-input {
+    width: 75px;
+}
+
+.names-input {
+    width: 200px;
+}
+
+.transfer-dates {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7.5px;
+}
+
+.observation-text {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.observation-input {
+    width: calc(100% - 4px);
+}
+
+@media screen and (max-width: 424px) {
+    .options input[type=button] {
+        width: 215px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+
+    .options input[type=button]:nth-child(1),
+    .options input[type=button]:nth-child(2) {
+        width: 150px;
+    }
+
+    #guardar-boton {
+        width: 215px;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    .sign-text {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .sign-data {
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+
+    .sign-data input {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .signatures {
+        flex-direction: row;
+    }
+
+    .sign-text {
+        width: 125px;
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .sign-data {
+        align-items: center;
+    }
+
+    .sign-data input {
+        width: 196px;
+    }
+}

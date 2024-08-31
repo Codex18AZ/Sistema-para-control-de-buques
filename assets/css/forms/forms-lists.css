@@ -1,0 +1,39 @@
+@import "../forms.css";
+
+.content h1 {
+    margin-bottom: 15px;
+}
+
+/* Mensajes */
+.error-text,
+.success-text {
+    margin-bottom: 15px;
+}
+
+
+/* Tablas */
+.list-table th,
+.list-table td {
+    padding: 7px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.list-table th {
+    background-color: #319686;
+    font-weight: bold;
+}
+
+.list-table td {
+    background-color: white;
+}
+
+.show {
+    border: 1px solid #666666;
+    background-color: rgba(230, 230, 230, 0.85);
+    height: 35px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}

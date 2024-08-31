@@ -1,0 +1,168 @@
+@import "../forms.css";
+
+/* Formato de impresión */
+body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    background-color: white;
+}
+
+/* Estilos generales */
+.pdf-content,
+.pdf-nav,
+.pdf-nav div,
+.pdf-content h3,
+.pdf-content p,
+.bold,
+.italic {
+    font-family: 'Verdana', sans-serif;
+}
+
+.pdf-content {
+    /* margin: 15px; */
+    padding: 0 25px;
+    /*border: 3px solid #004EA3;*/
+    background-color: white;
+    color: black;
+    height: auto;
+}
+
+/* Títulos */
+.pdf-nav {
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pdf-nav div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pdf-nav img {
+    height: 40px;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #004EA3;
+    margin-left: 2.5%;
+    width: 95%;
+}
+
+.pdf-title {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.pdf-title h3 {
+    margin-bottom: 7.5px;
+}
+
+/* Tablas */
+table,
+th,
+td {
+    border: 1px solid #0057B7;
+}
+
+table {
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 7.5px;
+}
+
+.table-header {
+    background-color: #0057B7;
+    color: white;
+    text-align: center;
+}
+
+/* Pie de página */
+.pdf-footer {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pdf-footer p {
+    color: gray;
+}
+
+/* Botón de impresión */
+.pdf-print {
+    /* margin: 30px 0; */
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.print-button {
+    border: 1px solid #666666;
+    border-radius: 10px;
+    background-color: #0073F2;
+    font-weight: bold;
+    font-size: 17px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.translate-tooltip-mtz {
+    display: none;
+}
+
+/*modificaciones para los marcos*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+
+}
+
+#pdf-content {
+    position: relative;
+
+    /* Esto es necesario para que el marco se posicione correctamente */
+    display: block;
+    height: auto;
+}
+
+@page {
+    /*size: 210mm 297mm;*/
+    size: A4;
+    margin: 10mm;
+}
+
+@media print {
+
+    /*no borrar*/
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Evaluar, por lo pronto marco solucionado y pensar las cantidades */
+tr,
+td {
+    page-break-inside: avoid;
+}

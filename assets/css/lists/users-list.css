@@ -1,0 +1,13 @@
+@import "../lists.css";
+
+.list-desktop thead tr th:nth-child(3) {
+    width: 90px;
+}
+
+.list-desktop thead tr th:nth-child(4) {
+    width: 80px;
+}
+
+.list-desktop thead tr th:nth-child(5) {
+    width: 108px;
+}

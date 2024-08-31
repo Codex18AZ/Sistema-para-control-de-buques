@@ -1,0 +1,62 @@
+@import "../finished-forms.css";
+
+.pdf-nav div,
+.pdf-content p,
+.bold,
+.italic {
+    font-family: 'Roboto', sans-serif;
+}
+
+.table,
+th,
+td {
+    border-color: black;
+}
+
+hr:first-of-type {
+    margin-bottom: 20px;
+}
+
+td:nth-child(1) {
+    width: 35%;
+}
+
+td:nth-child(2) {
+    width: 65%;
+}
+
+.pdf-details td:nth-child(1),
+.pdf-sailing td:nth-child(1),
+.pdf-information td:nth-child(1) {
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+.pdf-details,
+.pdf-sailing,
+.pdf-products,
+.pdf-information {
+    display: flex;
+}
+
+.pdf-details,
+.pdf-sailing {
+    column-gap: 25px;
+}
+
+.pdf-products,
+.pdf-information {
+    justify-content: space-evenly;
+}
+
+.pdf-products {
+    flex-wrap: wrap;
+}
+
+.pdf-products table {
+    width: 45%;
+}
+
+.pdf-information table {
+    width: 33%;
+}

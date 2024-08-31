@@ -1,0 +1,96 @@
+.menu {
+    position: relative;
+    z-index: 10;
+    height: 59px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.name {
+    height: 20px;
+    text-decoration: none;
+    float: right;
+    margin: 19.5px 10px;
+}
+
+.access,
+#toggle-button {
+    background-color: #bbbbbb;
+}
+
+.access:hover,
+#toggle-button:hover {
+    background-color: #cccccc;
+}
+
+.access {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 9.5px 7.5px;
+    border-radius: 5px;
+    font-weight: bold;
+    float: right;
+}
+
+.access-mobile {
+    font-size: 20px;
+}
+
+#toggle-button {
+    width: 47px;
+    height: 47px;
+    padding: 6px;
+    float: left;
+}
+
+.toggle {
+    width: 100%;
+}
+
+.logo {
+    padding: 7px;
+    height: 45px;
+    float: left;
+    background-color: white;
+}
+
+.logo img {
+    height: 100%;
+}
+
+@media screen and (max-width: 375px) {
+    .access {
+        width: 40px;
+    }
+
+    .access-desktop {
+        display: none;
+    }
+
+    .access-mobile {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    .access {
+        width: 110px;
+    }
+
+    .access-desktop {
+        display: flex;
+    }
+
+    .access-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .name {
+        display: none;
+    }
+}

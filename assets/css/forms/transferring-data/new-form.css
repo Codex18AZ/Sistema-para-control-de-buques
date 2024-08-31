@@ -1,0 +1,57 @@
+@import "../../forms.css";
+
+.form-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    width: 167px;
+    height: 18px;
+    padding: 2px;
+}
+
+select {
+    width: 175px;
+    height: 26px;
+}
+
+td:nth-child(1) {
+    min-width: 120px;
+    width: 30%;
+}
+
+td:nth-child(2) {
+    width: 70%;
+}
+
+@media screen and (max-width: 424px) {
+    .options input[type=button] {
+        width: 215px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+
+    .options input[type=button]:nth-child(1),
+    .options input[type=button]:nth-child(2) {
+        width: 150px;
+    }
+
+    #guardar-boton {
+        width: 215px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .form-table {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .form-table {
+        width: 500px;
+    }
+}

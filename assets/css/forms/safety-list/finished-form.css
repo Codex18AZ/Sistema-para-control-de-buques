@@ -1,0 +1,36 @@
+@import "../finished-forms.css";
+
+hr:first-of-type {
+    margin-bottom: 20px;
+}
+
+#pdf-content {
+    height: auto;
+}
+
+.table-subtitles,
+.center {
+    text-align: center;
+}
+
+.table-subtitles {
+    font-weight: bold;
+}
+
+.accordance {
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.accordance p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.pdf-table-eighteen .table-header {
+    text-align: left;
+}
+
+.table-signatures {
+    height: 100px;
+    vertical-align: top;
+}

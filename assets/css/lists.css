@@ -1,0 +1,120 @@
+@import "general.css";
+@import "sidebar.css";
+
+body {
+    background-color: #CBE4FF;
+}
+
+.content {
+    width: calc(100% - 40px);
+}
+
+.list-desktop {
+    margin-top: 7.5px;
+}
+
+.list-desktop th,
+.list-desktop td,
+.mobile-result {
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.list-desktop th {
+    background-color: #004EA3;
+    color: white;
+}
+
+.list-desktop td,
+.mobile-result {
+    background-color: white;
+}
+
+.list-desktop td {
+    text-align: center;
+}
+
+.list-desktop td form {
+    display: flex;
+    justify-content: center;
+}
+
+.submit {
+    height: 28px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.list-mobile {
+    width: 80%;
+    min-width: 225px;
+    max-width: 285px;
+}
+
+.list-mobile form:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.mobile-result {
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.no-results {
+    text-align: center;
+    font-style: italic;
+}
+
+.searching {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    column-gap: 25px;
+}
+
+.searching input[type=search] {
+    height: 25px;
+    padding: 2px;
+    width: 225px;
+}
+
+.checking {
+    display: flex;
+    column-gap: 5px;
+}
+
+.filter {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .list-desktop {
+        display: none !important;
+    }
+
+    .searching {
+        width: 65%;
+        min-width: 200px;
+        max-width: 250px;
+        margin-bottom: 15px;
+
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .list-mobile {
+        display: none !important;
+    }
+
+    .searching {
+        margin-bottom: 10px;
+    }
+}

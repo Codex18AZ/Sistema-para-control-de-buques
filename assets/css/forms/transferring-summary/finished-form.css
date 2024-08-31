@@ -1,0 +1,37 @@
+@import "../finished-forms.css";
+
+hr:first-of-type {
+    margin-bottom: 20px;
+}
+
+.pdf-table-one td:nth-child(1),
+.pdf-table-one tr:nth-child(-n+3) td:nth-child(3),
+.pdf-table-one tr:nth-child(n+4) td:nth-child(6) {
+    max-width: 175px;
+}
+
+.pdf-table-two th:nth-child(1) {
+    width: 28%;
+}
+
+.pdf-table-two th:nth-child(2),
+.pdf-table-two th:nth-child(3) {
+    width: 36%;
+}
+
+.pdf-table-two tr:nth-child(2) td:nth-child(n+2) {
+    width: 18%;
+}
+
+.pdf-table-three td:nth-child(1) {
+    max-width: 170px;
+}
+
+.pdf-table-four tr:not(:nth-child(7)) td:nth-child(1),
+.pdf-table-four tr:not(:nth-child(7)) td:nth-child(3) {
+    max-width: 125px;
+}
+
+.pdf-table-eleven td:nth-child(even) {
+    width: 30%;
+}

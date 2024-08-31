@@ -1,0 +1,28 @@
+@import "finished-form.css";
+
+/* Tamaños de letra */
+.pdf-nav,
+.pdf-nav div {
+    font-size: 11px;
+}
+
+.pdf-content,
+.pdf-content p,
+.italic {
+    font-size: 9px;
+}
+
+.pdf-content h3,
+.bold {
+    font-size: 10px;
+}
+
+/* Evaluar el lugar y poner si es necesario */
+tr,
+td {
+    page-break-inside: avoid;
+}
+
+.pdf-signatures {
+    page-break-inside: avoid;
+}

@@ -1,0 +1,89 @@
+@import "general.css";
+
+.role-title {
+    color: #004EA3;
+    margin-bottom: 15px;
+}
+
+.role-options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.role-options a {
+    margin-right: 30px;
+}
+
+.role-options a:last-child {
+    margin-right: 0px;
+}
+
+.role-option,
+.role-option tr,
+.role-option td {
+    border: 1px solid black;
+}
+
+.role-option {
+    width: 175px;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.option-image {
+    height: 130px;
+}
+
+.option-image td img {
+    margin: 10px 0;
+    width: 130px;
+}
+
+.option-text {
+    height: 65px;
+}
+
+.option-text td {
+    padding: 7px;
+}
+
+/* Para los formularios que no están disponibles */
+.disabled {
+    opacity: 70%;
+}
+
+.disabled img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+@media screen and (min-width: 425px) and (max-width: 830px) {
+    .role-options {
+        width: 380px;
+    }
+
+    .role-options a:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .role-options a:nth-child(-n+2) {
+        margin-bottom: 30px;
+    }
+
+    /* Si el menú posee solo tres opciones */
+    .role-options a:nth-last-child(3):first-child~a:last-child {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .role-options {
+        width: 175px;
+    }
+
+    .role-options a:nth-child(-n+3) {
+        margin-bottom: 30px;
+    }
+}
